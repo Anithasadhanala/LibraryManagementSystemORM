@@ -48,4 +48,6 @@ var book_obj = new BookService();
 
 
 //book_obj.UpdateBookTitle(1, "hii");
-book_obj.DeleteABood(1);
+
+
+book_obj.DeleteABook(1);

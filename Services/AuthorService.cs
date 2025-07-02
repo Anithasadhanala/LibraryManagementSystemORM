@@ -11,6 +11,7 @@ namespace LibraryManagementSystem.Services
 {
     internal class AuthorService
     {
+        // Insert single into the Authors Table
         public void InsertSingleRecord(string Name, string Email)
         {
             try
@@ -29,6 +30,7 @@ namespace LibraryManagementSystem.Services
             }
         }
 
+        // Insert Authors and Books at a time as they are related
         public void InsertAuthorWithBooks(Author obj)
         {
             try
@@ -46,15 +48,6 @@ namespace LibraryManagementSystem.Services
                 Console.WriteLine(ex.Message);
                 throw;
             }
-
-
-
-
-
-
-
-
-
         }
     }
 }

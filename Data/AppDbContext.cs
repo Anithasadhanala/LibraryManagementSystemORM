@@ -15,7 +15,7 @@ namespace LibraryManagementSystem.Data
     {
 
         // DB connection string
-        private string connection = @"Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=HRMS; Integrated Security=True";
+        private readonly string connection = @"Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=HRMS; Integrated Security=True";
 
         // mapping EMployee table to the Employee class. and in the project we named it as Employees
         public DbSet<Author> Authors { get; set; }

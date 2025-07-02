@@ -15,6 +15,7 @@ namespace LibraryManagementSystem.Services
     internal class BookService
     {
 
+        // Returns the Books and corresponding Authors
         public List<Book> FetchBooksWithAuthors()
         {
             try
@@ -32,6 +33,8 @@ namespace LibraryManagementSystem.Services
             }
         }
 
+
+        // Update a Book
         public void UpdateBookTitle(int id,string title)
         {
             try
@@ -53,7 +56,9 @@ namespace LibraryManagementSystem.Services
 
         }
 
-        public void DeleteABood(int id)
+
+        // Delete a single Book by ID
+        public void DeleteABook(int id)
         {
             try
             {
